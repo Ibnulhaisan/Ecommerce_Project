@@ -7,7 +7,7 @@ if(Session::has('user'))
 }
 ?>
 
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default" role="navigation" style="background-color: lightseagreen">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -17,13 +17,13 @@ if(Session::has('user'))
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">E-comm</a>
+            <a class="navbar-brand" href="/">Shopping cart</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active" ><a href="#" style="background-color: lightseagreen;">Home</a></li>
                 <li><a href="/myorders">Orders</a></li>
             </ul>
             <form class="navbar-form navbar-left" role="search">
@@ -39,14 +39,14 @@ if(Session::has('user'))
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/logout">Logout</a></li>
+                        <li><a href="/logout" style="color: red;">Logout</a></li>
                     </ul>
                 </li>
                 @else
-                    <li><a href="login">login</a></li>
-                    <li><a href="register">Register</a></li>
+                    <li><a href="login" style="color: green;">login</a></li>
+                    <li><a href="register" style="color: blue;">Register</a></li>
                 @endif
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
 </nav>

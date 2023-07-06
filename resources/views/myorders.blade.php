@@ -8,7 +8,7 @@
                     <div class="row searched-item cart-list-devider">
                         <div class="col-sm-3">
                             <a href="detail/{{$item->id}}">
-                                <img class="trending-image" src="{{$item->gallery}}" alt="Chania">
+                                <img class="trending-image" src="{{$item->gallery}}" alt="Chania" style="width: 300px; height: 200px;">
                             </a>
                         </div>
                         <div class="col-sm-4">
